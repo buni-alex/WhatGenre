@@ -1,7 +1,8 @@
 # WhatGenre
-## A simple music genre classifier based on audio features and a dense neural network, with recommendations and a PyQt UI.
+# A simple music genre classifier based on audio features and a dense neural network, with recommendations and a PyQt UI.
 
-# It's necessary to fill the config.yaml file with a valid LastFm API key and user agent.
+
+## It's necessary to fill the config.yaml file with a valid LastFm API key and user agent.
 
 The model is trained on the GTZAN dataset, which offers a collection of 10 genres with 100 30-seconds samples each.
 - Pop
