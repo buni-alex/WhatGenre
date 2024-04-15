@@ -49,9 +49,8 @@ After getting the predicted label, LastFM's API is used to get four random track
 
 <p float="left">
   <img src="https://github.com/buni-alex/WhatGenre/blob/main/Resources/example1.png" alt = "Main Window at start" width=40% height=40%>
-  <img src="https://github.com/buni-alex/WhatGenre/blob/main/Resources/example2.png" alt = "Loading Animation" width=40% height=40%>
+  <img src="https://github.com/buni-alex/WhatGenre/blob/main/Resources/example3.png" alt = "Result Window" width=40% height=40%>
 </p>
-<img src="https://github.com/buni-alex/WhatGenre/blob/main/Resources/example3.png" alt = "Result Window" width=40% height=40%>
 
 ## Could be improved / added:
 - the 30 seconds segment is too random and maybe not sufficient
