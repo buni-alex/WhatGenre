@@ -37,9 +37,9 @@ The following features are extracted, using the Librosa package:
 
 The model is a simple dense neural network of 4 fully-connected layers and one softmax output layer, trained for 500 epochs.
 
-![Training and validation statistics](https://github.com/buni-alex/WhatGenre/blob/main/Resources/training.png)
+![Training and validation statistics](https://github.com/buni-alex/WhatGenre/blob/main/Resources/training.jpg)
 
-As it may be seen, 500 epochs seem to be highly excessive for this particular architecture on this particular task.
+As it may be seen, 500 epochs seem to be highly excessive for this particular architecture on this particular task. A further revision of the model is necessary.
 
 For inference, a random segment of at most 30 seconds is taken from the input audio file and its audio features are extracted and fed to the model.
 After getting the predicted label, LastFM's API is used to get four random tracks from the first 2000 Top Tracks in the same genre. Clicking on a recommended song's name opens up a browser to a YouTube search of the said title. 
