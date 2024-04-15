@@ -1,0 +1,74 @@
+QMainWindow {
+    background-image: url(Resources/bckg3.jpg);
+}
+
+.QPushButton {
+    position: relative;
+    font: 20pt "Poppins SemiBold";
+    font-weight: 400;
+    background-color: rgb(146, 47, 240);
+    color:rgb(0, 0, 0);
+    border-style:solid;
+    border-bottom-width: 5px;
+    border-left-width: 4px;
+    border-color: rgb(69, 34, 102);
+    border-radius: 20px;
+}
+
+.QPushButton:hover{
+    background-color: rgb(217, 136, 223);
+    border-color: rgb(134, 109, 136)
+}
+
+.QPushButton:pressed{
+    background-color: rgb(146, 47, 240);
+    border-color: rgb(69, 34, 102);
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+}
+
+.QPushButton#Back{
+    position: relative;
+    background-color: rgb(146, 47, 240);
+    color:rgb(0, 0, 0);
+    border-radius: 50;
+    border-width: 5px;
+}
+.QPushButton#Back:hover{
+    background-color: rgb(217, 136, 223);
+    border-color: rgb(134, 109, 136)
+}
+
+.QPushButton#Back:pressed{
+    background-color: rgb(146, 47, 240);
+    border-color: rgb(69, 34, 102);
+    border-width: 1px;
+}
+
+.QLabel#Title{
+    position: relative;
+    color:rgb(146, 47, 240);
+    font-size: 58pt;
+    font-weight: 300;
+    height: 5px;
+    font-family: "Hiatus";
+}
+
+.QLabel#genreLabel{
+    position: relative;
+    color: black;
+    font-size:40pt;
+    font-weight: 300;
+    font-family:"Poppins SemiBold";
+    border-style: solid;
+}
+
+.QLabel#Rec{
+    background-image : url(./Resources/bckg_rec_mov.png); 
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 13px;
+    border-color: rgb(146, 47, 240);
+    font: 15pt "Poppins ExtraLight";
+    font-style: italic
+}

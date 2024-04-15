@@ -1,0 +1,4 @@
+culoare background: 225, 227, 231
+dimensiune fereastra: 720x890
+
+culoare border butoane (negru): 44-43-43 
