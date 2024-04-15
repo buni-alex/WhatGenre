@@ -47,8 +47,10 @@ As it may be seen, 500 epochs seem to be highly excessive for this particular ar
 For inference, a random segment of at most 30 seconds is taken from the input audio file and its audio features are extracted and fed to the model.
 After getting the predicted label, LastFM's API is used to get four random tracks from the first 2000 Top Tracks in the same genre. Clicking on a recommended song's name opens up a browser to a YouTube search of the said title. 
 
-<img src="https://github.com/buni-alex/WhatGenre/blob/main/Resources/example1.png" alt = "Main Window at start" width=50% height=50%>
-<img src="https://github.com/buni-alex/WhatGenre/blob/main/Resources/example2.png" alt = "Loading Animation" width=50% height=50%>
+<p float="left">
+  <img src="https://github.com/buni-alex/WhatGenre/blob/main/Resources/example1.png" alt = "Main Window at start" width=50% height=50%>
+  <img src="https://github.com/buni-alex/WhatGenre/blob/main/Resources/example2.png" alt = "Loading Animation" width=50% height=50%>
+</p>
 <img src="https://github.com/buni-alex/WhatGenre/blob/main/Resources/example3.png" alt = "Result Window" width=50% height=50%>
 
 ## Could be improved / added:
