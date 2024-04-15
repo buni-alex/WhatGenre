@@ -48,10 +48,10 @@ For inference, a random segment of at most 30 seconds is taken from the input au
 After getting the predicted label, LastFM's API is used to get four random tracks from the first 2000 Top Tracks in the same genre. Clicking on a recommended song's name opens up a browser to a YouTube search of the said title. 
 
 <p float="left">
-  <img src="https://github.com/buni-alex/WhatGenre/blob/main/Resources/example1.png" alt = "Main Window at start" width=50% height=50%>
-  <img src="https://github.com/buni-alex/WhatGenre/blob/main/Resources/example2.png" alt = "Loading Animation" width=50% height=50%>
+  <img src="https://github.com/buni-alex/WhatGenre/blob/main/Resources/example1.png" alt = "Main Window at start" width=40% height=40%>
+  <img src="https://github.com/buni-alex/WhatGenre/blob/main/Resources/example2.png" alt = "Loading Animation" width=40% height=40%>
 </p>
-<img src="https://github.com/buni-alex/WhatGenre/blob/main/Resources/example3.png" alt = "Result Window" width=50% height=50%>
+<img src="https://github.com/buni-alex/WhatGenre/blob/main/Resources/example3.png" alt = "Result Window" width=40% height=40%>
 
 ## Could be improved / added:
 - the 30 seconds segment is too random and maybe not sufficient
