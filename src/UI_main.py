@@ -30,7 +30,7 @@ class MainWindow(QMainWindow):
         
         self.setGeometry(960-self.width//2, 100, self.width, self.height)
 
-        self.setStyleSheet(open('Style.css').read())
+        self.setStyleSheet(open('src/style/style.css').read())
         self.UIComponents()
 
     def UIComponents(self):
@@ -155,6 +155,7 @@ class MainWindow(QMainWindow):
         self.predicter = Predicter()
         self.predicter.moveToThread(self.predictThread)
         self.predicter.start.connect(lambda: self.loading())
+        self.importer.wait()
         self.predicter.finished.connect(lambda: (self.result(self.predicter), self.predicter.stop(), self.predictThread.quit(), self.predictThread.wait()))  
         self.predictThread.started.connect(self.predicter.predict)
 
@@ -191,7 +192,6 @@ class MainWindow(QMainWindow):
                                         directory = os.getcwd(),
                                         filter = "Audio Files (*.mp3 *.mp4 *.flac *.wav *.m4a)")[0]
         if filepath != '':
-            self.importer.wait()
             if(self.predicterCreated == False):
                 self.createPredicter()
                 self.predicterCreated = True
@@ -256,9 +256,9 @@ class MainWindow(QMainWindow):
         
 if __name__ == "__main__" :
     App = QApplication(sys.argv)
-    QtGui.QFontDatabase.addApplicationFont("Resources/Hiatus.otf")
-    QtGui.QFontDatabase.addApplicationFont("Resources/Poppins-SemiBold.ttf")
-    QtGui.QFontDatabase.addApplicationFont("Resources/Poppins-Medium.ttf")
+    QtGui.QFontDatabase.addApplicationFont("./Resources/Hiatus.otf")
+    QtGui.QFontDatabase.addApplicationFont("./Resources/Poppins-SemiBold.ttf")
+    QtGui.QFontDatabase.addApplicationFont("./Resources/Poppins-Medium.ttf")
   
     window = MainWindow()
 

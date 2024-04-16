@@ -4,7 +4,7 @@ import random
 import yaml
 
 
-with open('config.yaml', 'r') as stream:
+with open('src/config/config.yaml', 'r') as stream:
     try:
         config = yaml.safe_load(stream)
     except yaml.YAMLError as exc:
